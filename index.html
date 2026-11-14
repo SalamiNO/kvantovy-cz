@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doména kvantove.cz je na prodej</title>
+  <meta name="description" content="Prémiové české domény kvantove.cz, kvantovy.cz, kvantova.cz a kvantovo.cz jsou na prodej. Jednotlivě nebo jako balíček.">
+  <meta name="theme-color" content="#0b0f1a">
+  <link rel="preload" href="fonts/azeret-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/azeret-mono-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='4' fill='%2367e8f9'/%3E%3Cellipse cx='16' cy='16' rx='14' ry='6' fill='none' stroke='%23a78bfa' stroke-width='2'/%3E%3Cellipse cx='16' cy='16' rx='14' ry='6' fill='none' stroke='%23a78bfa' stroke-width='2' transform='rotate(60 16 16)'/%3E%3Cellipse cx='16' cy='16' rx='14' ry='6' fill='none' stroke='%23a78bfa' stroke-width='2' transform='rotate(120 16 16)'/%3E%3C/svg%3E">
+  <style>
+    @font-face { font-family: 'Azeret Mono'; font-weight: 500 700; font-display: swap; src: url(fonts/azeret-mono-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+    @font-face { font-family: 'Azeret Mono'; font-weight: 500 700; font-display: swap; src: url(fonts/azeret-mono-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+    @font-face { font-family: 'Inter'; font-weight: 400 700; font-display: swap; src: url(fonts/inter-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+    @font-face { font-family: 'Inter'; font-weight: 400 700; font-display: swap; src: url(fonts/inter-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+    :root {
+      --bg: #0b0f1a; --bg-2: #111827; --line: #1f2a3d;
+      --ink: #f3f4f6; --ink-2: #b6bdcb; --ink-3: #8b93a5;
+      --violet: #a78bfa; --cyan: #67e8f9;
+      --mono: 'Azeret Mono', ui-monospace, monospace;
+      --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .orbit { animation: none !important; } }
+    body {
+      margin: 0; font: 17px/1.6 var(--sans); color: var(--ink); background: var(--bg);
+      background-image:
+        radial-gradient(60rem 30rem at 85% -10%, rgba(167,139,250,.18), transparent 60%),
+        radial-gradient(40rem 24rem at -10% 30%, rgba(103,232,249,.10), transparent 60%);
+      background-repeat: no-repeat;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    h1, h2, h3 { font-family: var(--mono); line-height: 1.1; margin: 0; letter-spacing: -.01em; }
+    p { margin: 0 0 1em; }
+    ul { margin: 0; padding: 0; list-style: none; }
+    .container { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+    :focus-visible { outline: 3px solid var(--cyan); outline-offset: 3px; border-radius: 6px; }
+
+    .eyebrow { font: 500 13px var(--mono); text-transform: uppercase; letter-spacing: .14em; color: var(--cyan); margin-bottom: 16px; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 26px;
+      font: 600 16px/1 var(--sans); text-decoration: none; border-radius: 999px; white-space: nowrap;
+      color: #0b0f1a; background: linear-gradient(90deg, var(--cyan), var(--violet)); border: 0;
+      transition: transform .15s, box-shadow .15s;
+    }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 8px 30px rgba(167,139,250,.35); }
+    .btn-ghost { background: transparent; color: var(--ink); border: 1px solid #344158; }
+    .btn-ghost:hover { border-color: var(--violet); box-shadow: none; }
+
+    /* Hero */
+    .hero { padding: 96px 0 72px; }
+    .hero-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: center; }
+    .hero h1 { font-size: clamp(38px, 7vw, 76px); margin-bottom: 18px; word-break: break-word; }
+    .hero h1 .tld { color: var(--violet); }
+    .price-row { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 14px; margin-bottom: 28px; }
+    .price { font: 700 clamp(28px, 4vw, 40px) var(--mono); }
+    .price-note { color: var(--ink-3); font-size: 15px; }
+    .lead { font-size: 19px; color: var(--ink-2); max-width: 34em; margin-bottom: 32px; }
+    .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+
+    .atom { position: relative; width: 100%; max-width: 320px; aspect-ratio: 1; justify-self: center; }
+    .atom .core { position: absolute; inset: 44%; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 40px 10px rgba(103,232,249,.5); }
+    .orbit { position: absolute; inset: 0; border: 2px solid rgba(167,139,250,.55); border-radius: 50%; transform: rotate(var(--r)) scaleY(.38); animation: spin 14s linear infinite; }
+    .orbit::after { content: ''; position: absolute; top: -6px; left: 50%; width: 12px; height: 12px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 12px var(--cyan); }
+    .orbit:nth-child(2) { --r: 60deg; animation-duration: 18s; }
+    .orbit:nth-child(3) { --r: 120deg; animation-duration: 22s; }
+    .orbit:nth-child(1) { --r: 0deg; }
+    @keyframes spin { to { transform: rotate(calc(var(--r) + 360deg)) scaleY(.38); } }
+
+    /* Sections */
+    .section { padding: 72px 0; border-top: 1px solid var(--line); }
+    .section h2 { font-size: clamp(26px, 3.4vw, 38px); margin-bottom: 14px; }
+    .section .sub { color: var(--ink-2); max-width: 40em; margin-bottom: 36px; }
+
+    .uses { display: flex; flex-wrap: wrap; gap: 10px; }
+    .uses li { padding: 10px 16px; border: 1px solid var(--line); border-radius: 999px; background: rgba(17,24,39,.6); color: var(--ink-2); font-size: 15px; }
+
+    .bundle { display: grid; grid-template-columns: 1.3fr 1fr; gap: 28px; align-items: stretch; }
+    .domains { border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: rgba(17,24,39,.6); }
+    .domains li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 18px 22px; border-bottom: 1px solid var(--line); }
+    .domains li:last-child { border-bottom: 0; }
+    .domains li.current { background: rgba(167,139,250,.10); }
+    .domains .d { font: 700 18px var(--mono); }
+    .domains .d small { display: block; font: 400 13px var(--sans); color: var(--cyan); }
+    .domains .p { font: 600 16px var(--mono); color: var(--ink-2); white-space: nowrap; }
+    .deal {
+      border-radius: 18px; padding: 30px; display: flex; flex-direction: column; justify-content: center;
+      background: linear-gradient(160deg, rgba(167,139,250,.22), rgba(103,232,249,.10)); border: 1px solid rgba(167,139,250,.4);
+    }
+    .deal .was { color: var(--ink-3); text-decoration: line-through; font-family: var(--mono); }
+    .deal .now { font: 700 40px var(--mono); margin: 4px 0 10px; }
+    .deal p { color: var(--ink-2); }
+
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; counter-reset: s; }
+    .steps li { border: 1px solid var(--line); border-radius: 16px; padding: 24px; background: rgba(17,24,39,.6); color: var(--ink-2); }
+    .steps li::before { counter-increment: s; content: '0' counter(s); display: block; font: 700 14px var(--mono); color: var(--cyan); margin-bottom: 10px; }
+    .steps strong { display: block; color: var(--ink); margin-bottom: 4px; }
+
+    .contact { text-align: center; }
+    .contact .sub { margin-inline: auto; }
+    .mail { font: 700 clamp(18px, 3vw, 24px) var(--mono); text-decoration: none; border-bottom: 2px solid var(--violet); }
+
+    footer { padding: 28px 0; border-top: 1px solid var(--line); color: var(--ink-3); font-size: 14px; }
+
+    @media (max-width: 820px) {
+      body { font-size: 16px; }
+      .hero { padding: 48px 0 48px; }
+      .hero-grid, .bundle { grid-template-columns: 1fr; }
+      .atom { max-width: 180px; order: -1; justify-self: start; }
+      .lead { font-size: 17px; }
+      .cta .btn { flex: 1 1 100%; }
+      .steps { grid-template-columns: 1fr; }
+      .section { padding: 56px 0; }
+      .domains li { padding: 16px 18px; }
+      .deal { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Doména je na prodej</p>
+          <h1 id="domain"><span class="name">kvantove</span><span class="tld">.cz</span></h1>
+          <div class="price-row">
+            <span class="price" id="price">29 000 Kč</span>
+          </div>
+          <p class="lead">Krátká, zapamatovatelná česká doména pro projekt o kvantových technologiích, vědě nebo inovacích. K dispozici samostatně i jako součást balíčku čtyř domén.</p>
+          <div class="cta">
+            <a class="btn" id="offer" href="#kontakt">Mám zájem</a>
+            <a class="btn btn-ghost" href="#balicek">Celý balíček za 59 000 Kč</a>
+          </div>
+        </div>
+        <div class="atom" aria-hidden="true">
+          <div class="orbit"></div><div class="orbit"></div><div class="orbit"></div>
+          <div class="core"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>K čemu se hodí</h2>
+        <p class="sub">Slovo „kvantový“ dnes zní jako budoucnost. Doména se hodí všude, kde chcete působit moderně a odborně.</p>
+        <ul class="uses">
+          <li>Kvantové počítače a technologie</li>
+          <li>Technologický startup</li>
+          <li>Popularizace vědy a vzdělávání</li>
+          <li>Kvantová fyzika</li>
+          <li>Média a blog o inovacích</li>
+          <li>Osobní rozvoj a koučink</li>
+          <li>Silná značka produktu</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="balicek">
+      <div class="container">
+        <h2>Balíček všech čtyř domén</h2>
+        <p class="sub">Získejte všechny tvary najednou a chraňte svou značku před tím, aby podobnou doménu použil někdo jiný.</p>
+        <div class="bundle">
+          <ul class="domains" id="domains"></ul>
+          <div class="deal">
+            <span class="was" id="sum">78 000 Kč</span>
+            <span class="now">59 000 Kč</span>
+            <p>Všechny čtyři domény jedním převodem. Ušetříte <strong id="save">19 000 Kč</strong> oproti nákupu jednotlivě.</p>
+            <a class="btn" id="offer-bundle" href="#kontakt">Mám zájem o balíček</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Jak probíhá prodej</h2>
+        <p class="sub">Jednoduše a bezpečně, bez prostředníků.</p>
+        <ol class="steps" style="list-style:none;margin:0;padding:0">
+          <li><strong>Napište mi</strong>E-mailem dejte vědět, o kterou doménu nebo balíček máte zájem.</li>
+          <li><strong>Domluvíme se</strong>Ozvu se vám a domluvíme platbu i postup převodu.</li>
+          <li><strong>Převod domény</strong>Po přijetí platby převedu doménu na vás přes registrátora.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section contact" id="kontakt">
+      <div class="container">
+        <h2>Máte zájem?</h2>
+        <p class="sub">Napište mi, o kterou doménu nebo balíček máte zájem. Ozvu se vám s dalším postupem.</p>
+        <a class="mail" id="mail" href="mailto:sobwatches@gmail.com">sobwatches@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">Domény kvantove.cz · kvantovy.cz · kvantova.cz · kvantovo.cz jsou na prodej.</div>
+  </footer>
+
+  <script>
+    const EMAIL = 'sobwatches@gmail.com';
+    const DOMAINS = [
+      { name: 'kvantove', price: 29000, hint: 'kvantové počítače, technologie' },
+      { name: 'kvantovy', price: 24000, hint: 'kvantový počítač, kvantový skok' },
+      { name: 'kvantova', price: 19000, hint: 'kvantová fyzika, kvantová budoucnost' },
+      { name: 'kvantovo', price: 6000,  hint: 'krátký a výrazný tvar' }
+    ];
+    const BUNDLE = 59000;
+    const fmt = n => n.toLocaleString('cs-CZ').replace(/ /g, ' ') + ' Kč';
+
+    const host = location.hostname.replace(/^www\./, '');
+    const current = DOMAINS.find(d => host === d.name + '.cz') || DOMAINS[0];
+    const full = current.name + '.cz';
+
+    document.title = 'Doména ' + full + ' je na prodej';
+    document.querySelector('#domain .name').textContent = current.name;
+    document.getElementById('price').textContent = fmt(current.price);
+
+    const mailto = subject => 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(subject);
+    document.getElementById('offer').href = mailto('Zájem o doménu ' + full);
+    document.getElementById('offer-bundle').href = mailto('Zájem o balíček kvantových domén');
+    document.getElementById('mail').href = mailto('Zájem o doménu ' + full);
+
+    const sum = DOMAINS.reduce((a, d) => a + d.price, 0);
+    document.getElementById('sum').textContent = fmt(sum);
+    document.getElementById('save').textContent = fmt(sum - BUNDLE);
+
+    document.getElementById('domains').innerHTML = DOMAINS.map(d =>
+      `<li${d === current ? ' class="current"' : ''}><span class="d">${d.name}.cz<small>${d.hint}</small></span><span class="p">${fmt(d.price)}</span></li>`
+    ).join('');
+  </script>
+</body>
+</html>
